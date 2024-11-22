@@ -1,0 +1,26 @@
+body {
+  /* Too broad. Narrow it down */
+  text-transform: capitalize;
+}
+
+section.belt-rank {
+  columns: 2;
+}
+
+section.technique-category {
+  break-inside: avoid;
+}
+
+
+h3 {
+  /* break-before: column; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+#vocabulary {
+  columns: 2;
+}
+
