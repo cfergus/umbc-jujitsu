@@ -1,8 +1,5 @@
 Future plans for the syllabus and other resources
 
-
-MVP - HTML with formatting sufficient to read.
-
 See https://bokcenter.harvard.edu/syllabus-design for thoughts on syllabus purpose
 
 Structure:
