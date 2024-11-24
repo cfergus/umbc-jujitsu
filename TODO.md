@@ -6,12 +6,17 @@ MVP - HTML with formatting sufficient to read.
 See https://bokcenter.harvard.edu/syllabus-design for thoughts on syllabus purpose
 
 Structure:
-- headers identified for use in links
 - opengraph tags
 - reactive layout
 - page breaks, columns, content breaks
 - nav (<nav>)
 - Hover - explain term
+
+Variants:
+- Syllabus only - no intro, no nav 
+- All text
+- JS enabled with navigation/control panel
+- Flashcards
 
 Optional assets:
 - Digital format for UMBC patch
