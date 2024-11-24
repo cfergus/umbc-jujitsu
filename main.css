@@ -1,6 +1,7 @@
 body {
   /* Too broad. Narrow it down */
   text-transform: capitalize;
+  font-family: Helvetica;
 }
 
 section.belt-rank {

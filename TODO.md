@@ -5,9 +5,8 @@ See https://bokcenter.harvard.edu/syllabus-design for thoughts on syllabus purpo
 Structure:
 - opengraph tags
 - reactive layout
-- page breaks, columns, content breaks
+- more page breaks, columns, content breaks
 - nav (<nav>)
-- Hover - explain term
 
 Variants:
 - Syllabus only - no intro, no nav 
