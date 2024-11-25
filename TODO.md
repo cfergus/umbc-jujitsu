@@ -4,6 +4,7 @@ See https://bokcenter.harvard.edu/syllabus-design for thoughts on syllabus purpo
 
 Structure:
 - opengraph tags
+- remove hr in favor of section styling
 - reactive layout
 - more page breaks, columns, content breaks
 - nav (<nav>)

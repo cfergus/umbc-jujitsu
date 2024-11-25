@@ -19,9 +19,10 @@ span.translation-en::before {
   content: '- '
 }
 
-h3 {
-  /* break-before: column; */
+/* h3 {
+  break-before: column;
 }
+*/
 
 ul {
   list-style-type: none;
