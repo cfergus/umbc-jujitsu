@@ -4,6 +4,10 @@ body {
   font-family: Helvetica;
 }
 
+#vocabulary dt {
+  text-decoration: underline;
+}
+
 section.belt-rank {
   columns: 2;
 }
@@ -16,8 +20,19 @@ span.translation-en {
   font-size: 0.9em;
 }
 span.translation-en::before {
-  content: '- '
+  content: '- ';
 }
+/* colors are just for identification / debugging
+.technique {
+  color: red;
+}
+.duration {
+  color: blue;
+}
+.aggregation {
+  color: green;
+}
+*/
 
 /* h3 {
   break-before: column;
