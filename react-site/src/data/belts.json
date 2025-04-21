@@ -1,0 +1,51 @@
+[
+    {
+        "id": "rokyu",
+        "name": "Rokyu",
+        "ordinalName": "6th Kyu",
+        "colorName": "Yellow",
+        "color": "yellow"
+    },
+    {
+        "id": "gokyu",
+        "name": "Gokyu",
+        "ordinalName": "5th Kyu",
+        "colorName": "Green",
+        "color": "green"
+    },
+    {
+        "id": "yonkyu",
+        "name": "Yonkyu",
+        "ordinalName": "4th Kyu",
+        "colorName": "Purple",
+        "color": "purple"
+    },
+    {
+        "id": "sankyu",
+        "name": "Sankyu",
+        "ordinalName": "3rd Kyu",
+        "colorName": "3rd Brown",
+        "color": "brown"
+    },
+    {
+        "id": "nikyu",
+        "name": "Nikyu",
+        "ordinalName": "2nd Kyu",
+        "colorName": "2nd Brown",
+        "color": "brown"
+    },
+    {
+        "id": "ikkyu",
+        "name": "Ikkyu",
+        "ordinalName": "1st Kyu",
+        "colorName": "1st Brown",
+        "color": "brown"
+    },
+    {
+        "id": "shodan",
+        "name": "Shodan",
+        "ordinalName": "1st Black",
+        "colorName": "Black",
+        "color": "black"
+    }
+]

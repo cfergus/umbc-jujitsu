@@ -1,0 +1,53 @@
+[
+    {
+        "id": "nage-waza",
+        "name": "Nage Waza",
+        "alternateNames": [
+            "Throwing Techniques"
+        ]
+    },
+    {
+        "id": "ukemi-waza",
+        "name": "Ukemi Waza",
+        "alternateNames": [
+            "Breakfall Techniques"
+        ]
+    },
+    {
+        "id": "atemi-waza",
+        "name": "Atemi Waza",
+        "alternateNames": [
+            "Striking Techniques"
+        ]
+    },
+    {
+        "id": "gatame-waza", 
+        "name": "Gatame Waza",
+        "alternateNames": [
+            "Ground Holding Techniques",
+            "Katame Waza"
+        ]
+    },
+    {
+        "id": "kansetsu-waza",
+        "name": "Kansetsu Waza",
+        "alternateNames": [
+            "Joint Techniques"
+        ]
+    },
+    {
+        "id": "ukemi-waza",
+        "name": "Ukemi Waza",
+        "alternateNames": [
+            "Breakfall Techniques"
+        ]
+    },
+    {
+        "id": "shime-waza",
+        "name": "Shime Waza",
+        "alternateNames": [
+            "Choke Techniques",
+            "Strangle Techniques"
+        ]
+    }
+]

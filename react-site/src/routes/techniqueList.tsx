@@ -1,10 +1,10 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { TechniqueCard } from '../components/TechniqueCard'
-import allTechniquesJSON from '../data/techniques.json'
 import { Technique } from '../models/technique'
 import { Box, Stack } from '@mui/material';
+import { allTechniquesJoined } from '../data/data-service';
 
-const allTechniques = allTechniquesJSON as Technique[];
+const techniques = allTechniquesJoined();
 
 export const Route = createFileRoute('/techniqueList')({
   component: TechniqueListComponent,
@@ -20,7 +20,7 @@ function TechniqueListComponent() {
     useFlexGap
     sx={{ flexWrap: 'wrap' }}>
 
-    {allTechniques.map( (t) => <TechniqueCard technique={t}></TechniqueCard> )}
+    {techniques.map( (t) => <TechniqueCard technique={t}></TechniqueCard> )}
   </Stack>
   
 }

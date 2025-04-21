@@ -26,6 +26,7 @@ Stretch goals:
 - Collab: with motion capture. Create 3D animations. Annotations on animation.
 - Collab: web tech - json-LD, etc
 
+Wikidata, related to https://en.wikipedia.org/wiki/List_of_judo_techniques for a distinct technique structure
 
 ## Dynamic Content
 

@@ -1,31 +1,44 @@
 [
     {
+        "id": "o-goshi",
+        "name": "O Goshi",
+        "alternateNames": [
+            "Major hip throw"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "rokyu"
+    },
+    {
+        "id": "tai-otoshi",
+        "name": "Tai Otoshi",
+        "alternateNames": [
+            "Body Drop Throw"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "rokyu"
+    },
+    {
+        "id": "merote-seoinage",
+        "name": "Merote Seoinage",
+        "alternateNames": [
+            "Shoulder Throw"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "gokyu"
+    },
+
+
+    {
         "id": "jab",
-        "name": "jab"
+        "name": "jab",
+        "categoryId": "atemi-waza",
+        "beltId": "rokyu"
     },
     {
         "id": "hook",
-        "name": "hook"
-    },
-    {
-        "id": "hook",
-        "name": "hook"
-    },
-    {
-        "id": "hook",
-        "name": "hook"
-    },
-    {
-        "id": "hook",
-        "name": "hook"
-    },
-    {
-        "id": "hook",
-        "name": "hook"
-    },
-    {
-        "id": "hook",
-        "name": "hook"
-    }
+        "name": "hook",
+        "categoryId": "atemi-waza",
+        "beltId": "rokyu"
+    }    
     
 ]
