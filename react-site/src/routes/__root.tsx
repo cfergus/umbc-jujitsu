@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Link, Outlet, createRootRoute } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
+import JujitsuAppBar from '../components/JujitsuAppBar'
 
 export const Route = createRootRoute({
   component: RootComponent,
@@ -9,34 +10,7 @@ export const Route = createRootRoute({
 function RootComponent() {
   return (
     <>
-      <div className="p-2 flex gap-2 text-lg">
-        <Link
-          to="/"
-          activeProps={{
-            className: 'font-bold',
-          }}
-          activeOptions={{ exact: true }}
-        >
-          Home
-        </Link>{' '}
-        <Link
-          to="/belts"
-          activeProps={{
-            className: 'font-bold',
-          }}
-        >
-          Belts
-        </Link>
-        <Link
-          to="/techniqueList"
-          activeProps={{
-            className: 'font-bold',
-          }}
-        >
-          Technique List
-        </Link>
-      </div>
-      <hr />
+      <JujitsuAppBar></JujitsuAppBar>
       <Outlet />
       <TanStackRouterDevtools position="bottom-right" />
     </>

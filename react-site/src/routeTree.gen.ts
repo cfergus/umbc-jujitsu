@@ -11,22 +11,22 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as TechniqueListImport } from './routes/techniqueList'
 import { Route as IndexImport } from './routes/index'
+import { Route as TechniquesIndexImport } from './routes/techniques/index'
 import { Route as BeltsIndexImport } from './routes/belts/index'
 import { Route as BeltsBeltIdImport } from './routes/belts/$beltId'
 
 // Create/Update Routes
 
-const TechniqueListRoute = TechniqueListImport.update({
-  id: '/techniqueList',
-  path: '/techniqueList',
-  getParentRoute: () => rootRoute,
-} as any)
-
 const IndexRoute = IndexImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const TechniquesIndexRoute = TechniquesIndexImport.update({
+  id: '/techniques/',
+  path: '/techniques/',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -53,13 +53,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
-    '/techniqueList': {
-      id: '/techniqueList'
-      path: '/techniqueList'
-      fullPath: '/techniqueList'
-      preLoaderRoute: typeof TechniqueListImport
-      parentRoute: typeof rootRoute
-    }
     '/belts/$beltId': {
       id: '/belts/$beltId'
       path: '/belts/$beltId'
@@ -74,6 +67,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BeltsIndexImport
       parentRoute: typeof rootRoute
     }
+    '/techniques/': {
+      id: '/techniques/'
+      path: '/techniques'
+      fullPath: '/techniques'
+      preLoaderRoute: typeof TechniquesIndexImport
+      parentRoute: typeof rootRoute
+    }
   }
 }
 
@@ -81,47 +81,47 @@ declare module '@tanstack/react-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/techniqueList': typeof TechniqueListRoute
   '/belts/$beltId': typeof BeltsBeltIdRoute
   '/belts': typeof BeltsIndexRoute
+  '/techniques': typeof TechniquesIndexRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/techniqueList': typeof TechniqueListRoute
   '/belts/$beltId': typeof BeltsBeltIdRoute
   '/belts': typeof BeltsIndexRoute
+  '/techniques': typeof TechniquesIndexRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
-  '/techniqueList': typeof TechniqueListRoute
   '/belts/$beltId': typeof BeltsBeltIdRoute
   '/belts/': typeof BeltsIndexRoute
+  '/techniques/': typeof TechniquesIndexRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/techniqueList' | '/belts/$beltId' | '/belts'
+  fullPaths: '/' | '/belts/$beltId' | '/belts' | '/techniques'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/techniqueList' | '/belts/$beltId' | '/belts'
-  id: '__root__' | '/' | '/techniqueList' | '/belts/$beltId' | '/belts/'
+  to: '/' | '/belts/$beltId' | '/belts' | '/techniques'
+  id: '__root__' | '/' | '/belts/$beltId' | '/belts/' | '/techniques/'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  TechniqueListRoute: typeof TechniqueListRoute
   BeltsBeltIdRoute: typeof BeltsBeltIdRoute
   BeltsIndexRoute: typeof BeltsIndexRoute
+  TechniquesIndexRoute: typeof TechniquesIndexRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  TechniqueListRoute: TechniqueListRoute,
   BeltsBeltIdRoute: BeltsBeltIdRoute,
   BeltsIndexRoute: BeltsIndexRoute,
+  TechniquesIndexRoute: TechniquesIndexRoute,
 }
 
 export const routeTree = rootRoute
@@ -135,22 +135,22 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/techniqueList",
         "/belts/$beltId",
-        "/belts/"
+        "/belts/",
+        "/techniques/"
       ]
     },
     "/": {
       "filePath": "index.tsx"
-    },
-    "/techniqueList": {
-      "filePath": "techniqueList.tsx"
     },
     "/belts/$beltId": {
       "filePath": "belts/$beltId.tsx"
     },
     "/belts/": {
       "filePath": "belts/index.tsx"
+    },
+    "/techniques/": {
+      "filePath": "techniques/index.tsx"
     }
   }
 }
