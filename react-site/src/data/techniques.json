@@ -30,13 +30,13 @@
 
     {
         "id": "jab",
-        "name": "jab",
+        "name": "Jab",
         "categoryId": "atemi-waza",
         "beltId": "rokyu"
     },
     {
         "id": "hook",
-        "name": "hook",
+        "name": "Hook",
         "categoryId": "atemi-waza",
         "beltId": "rokyu"
     }    
