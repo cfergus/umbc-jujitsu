@@ -18,15 +18,65 @@
         "beltId": "rokyu"
     },
     {
-        "id": "merote-seoinage",
-        "name": "Merote Seoinage",
+        "id": "ippon-seoinage",
+        "name": "Ippon Seoinage",
         "alternateNames": [
-            "Shoulder Throw"
+            "One Armed Shoulder Throw"
         ],
         "categoryId": "nage-waza",
-        "beltId": "gokyu"
+        "beltId": "rokyu"
+    },
+    {
+        "id": "uki-goshi",
+        "name": "Uki Goshi",
+        "alternateNames": [
+            "Floating Hip Check"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "rokyu"
+    },
+    {
+        "id": "o-soto-gari",
+        "name": "O Soto Gari",
+        "alternateNames": [
+            "Large Outer Reap"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "rokyu"
     },
 
+    {
+        "id": "front-flat-fall",
+        "name": "Front Flat Fall",
+        "alternateNames": [
+        ],
+        "categoryId": "ukemi-waza",
+        "beltId": "rokyu"
+    },
+    {
+        "id": "side-flat-fall",
+        "name": "Side Flat Fall",
+        "alternateNames": [
+        ],
+        "categoryId": "ukemi-waza",
+        "beltId": "rokyu"
+    },
+    {
+        "id": "back-flat-fall",
+        "name": "Back Flat Fall",
+        "alternateNames": [
+        ],
+        "categoryId": "ukemi-waza",
+        "beltId": "rokyu"
+    },
+    {
+        "id": "tiger-fall",
+        "name": "Tiger Fall",
+        "alternateNames": [
+        ],
+        "categoryId": "ukemi-waza",
+        "beltId": "rokyu"
+    },
 
     {
         "id": "jab",
@@ -35,10 +85,84 @@
         "beltId": "rokyu"
     },
     {
+        "id": "cross",
+        "name": "Cross",
+        "categoryId": "atemi-waza",
+        "beltId": "rokyu"
+    },
+    {
         "id": "hook",
         "name": "Hook",
         "categoryId": "atemi-waza",
         "beltId": "rokyu"
-    }    
+    },
+    {
+        "id": "uppercut",
+        "name": "Uppercut",
+        "categoryId": "atemi-waza",
+        "beltId": "rokyu"
+    },
+    {
+        "id": "front-kick",
+        "name": "Front Kick",
+        "categoryId": "atemi-waza",
+        "beltId": "rokyu"
+    },
+    {
+        "id": "side-kick",
+        "name": "Side Kick",
+        "categoryId": "atemi-waza",
+        "beltId": "rokyu"
+    },
+    {
+        "id": "Round Kick",
+        "name": "Round Kick",
+        "categoryId": "atemi-waza",
+        "beltId": "rokyu"
+    },
+    {
+        "id": "knee",
+        "name": "Knee",
+        "categoryId": "atemi-waza",
+        "beltId": "rokyu"
+    },
+    {
+        "id": "back-kick",
+        "name": "Back Kick",
+        "categoryId": "atemi-waza",
+        "beltId": "rokyu"
+    },
+    
+    {
+        "id": "kesa-gatame",
+        "name": "Kesa Gatame",
+        "alternateNames": [
+            "Scarf Hold"
+        ],
+        "categoryId": "gatame-waza",
+        "beltId": "rokyu"
+    },
+    {
+        "id": "juji-gatame",
+        "name": "Juji Gatame",
+        "alternateNames": [
+            "Cross Armlock"
+        ],
+        "categoryId": "gatame-waza",
+        "beltId": "rokyu"
+    },
+
+    
+    {
+        "id": "merote-seoinage",
+        "name": "Merote Seoinage",
+        "alternateNames": [
+            "Shoulder Throw"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "gokyu"
+    }
+
+
     
 ]
