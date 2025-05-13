@@ -29,8 +29,7 @@ export function TechniqueCard( {technique}: {technique: Technique} ) {
 
           {technique.beltLevel && 
             <span>
-              <span> {technique.beltLevel.name} </span>
-              <span style={{backgroundColor: technique.beltLevel.color }}>&nbsp; __ </span>
+              <span style={{backgroundColor: technique.beltLevel.color }}> {technique.beltLevel.name} </span>
             </span>
           }
         </Typography>

@@ -6,7 +6,7 @@ export function BeltCard( {belt}: {belt: BeltLevel} ) {
   return <div>
     <Card>
               
-      <CardHeader title={belt.name}>
+      <CardHeader title={belt.name} sx={{ backgroundColor: belt.color }}>
         <Typography gutterBottom variant="h5" component="div">
           {belt.name}
         </Typography>
@@ -14,8 +14,7 @@ export function BeltCard( {belt}: {belt: BeltLevel} ) {
       <CardContent>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
           
-          <span style={{backgroundColor: belt.color }}>&nbsp; __ </span>
-
+          
           {belt.ordinalName} - {belt.colorName} belt
 
         </Typography>

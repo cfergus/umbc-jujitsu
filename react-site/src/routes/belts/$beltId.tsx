@@ -1,5 +1,7 @@
 import { createFileRoute, notFound } from '@tanstack/react-router'
-import { allBelts } from '../../data/data-service'
+import { allBelts, allTechniques, allTechniquesJoined } from '../../data/data-service'
+import { Typography } from '@mui/material';
+import { TechniqueListComponent } from '../../components/TechniqueList';
 
 export const Route = createFileRoute('/belts/$beltId')({
   component: RouteComponent,
@@ -8,7 +10,13 @@ export const Route = createFileRoute('/belts/$beltId')({
     if (!belt) {
       throw notFound()
     }
-    return belt;
+
+    const techniques = allTechniquesJoined().filter( t => t.beltLevel?.id === beltId )
+
+    return {
+      belt: belt,
+      techniques: techniques
+    };
   },
   notFoundComponent: () => {
     return <p>Belt not found</p>
@@ -17,11 +25,22 @@ export const Route = createFileRoute('/belts/$beltId')({
 
 function RouteComponent() {
 
-  const belt = Route.useLoaderData();
+  const routeData = Route.useLoaderData();
+  const belt = routeData.belt;
+  const techniques = routeData.techniques;
 
   return <div>
-      <span style={{backgroundColor: belt.color }}>&nbsp; __ </span>
-
+      
+      <Typography variant="h3" sx={{ backgroundColor: belt.color  }}>
+        {belt.name}
+      </Typography>
       {belt.ordinalName} - {belt.colorName} belt
+
+
+      <div>
+        <TechniqueListComponent techniques={techniques}>
+        </TechniqueListComponent>
+
+      </div>
     </div>
 }
