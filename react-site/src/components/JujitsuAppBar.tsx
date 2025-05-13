@@ -1,37 +1,26 @@
 import { AppBar, Box, Button, CssBaseline, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from "@mui/material";
-import { Link } from "@tanstack/react-router";
+import { Link, linkOptions } from "@tanstack/react-router";
 import React from "react";
 
 
 const drawerWidth = 240;
 const homeLabel = "UMBC Jujitsu";
 
-const navItems = [
-  <Link
-    to="/"
-    activeProps={{
-      className: 'font-bold',
-    }}
-    activeOptions={{ exact: true }}
-  >
-    Home
-  </Link>,
-  <Link to="/belts"
-    activeProps={{
-      className: 'font-bold',
-    }}
-  >
-    Belts
-  </Link>,
-  <Link
-    to="/techniques"
-    activeProps={{
-      className: 'font-bold',
-    }}
-  >
-    Techniques
-  </Link>
-];
+const navItems = linkOptions([
+  {
+    to: '/',
+    label: 'Home',
+    activeOptions: { exact: true }
+  },
+  { 
+    to: '/belts',
+    label: 'Belts',
+  },
+  {
+    to: '/techniques',
+    label: 'Techniques'
+  }
+]);
 
 export default function JujitsuAppBar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -48,11 +37,18 @@ export default function JujitsuAppBar() {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item.props.to} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
+          <Link 
+            key={item.to}
+            {...item}
+            activeProps={{ className: 'font-bold'}}
+            style={{ textDecoration: 'none', color: 'inherit' }}
+          >
+            <ListItem  disablePadding>
+              <ListItemButton sx={{ textAlign: 'center' }}>
+                <ListItemText primary={item.label} />
+              </ListItemButton>
+            </ListItem>
+          </Link>
         ))}
       </List>
     </Box>
@@ -94,12 +90,22 @@ export default function JujitsuAppBar() {
             {homeLabel}
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button key={item.props.to} sx={{ color: '#fff' }}>
-                {item}
-              </Button>
-            ))}
+            {
+              navItems.map( (item) => (
+
+                <Link 
+                  key={item.to}
+                  {...item}
+                  activeProps={{ className: 'font-bold'}}  // TODO : active class is being overridden by mui typography, it seems
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                >
+                  <Button sx={{ color: '#fff' }}>{item.label}</Button>
+                 
+                </Link>
+              ))
+            }
           </Box>
+
         </Toolbar>
       </AppBar>
       <nav>
