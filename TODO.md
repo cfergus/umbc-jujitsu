@@ -38,3 +38,6 @@ Capabilities:
 - <time datetime="PT2H30M">2h 30m</time> . Used to start a timer during tests?
 - Control panel using CSS selectors for show/hide/styling. Noprint on panel
 
+## Technique Specifics
+- Shimi / Shime Waza?
+- Juji Gatame under rokyu+gokyu
