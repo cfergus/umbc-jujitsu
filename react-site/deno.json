@@ -37,6 +37,7 @@
     "autoprefixer": "npm:autoprefixer@^10.4.21",
     "react": "npm:react@^19.1.0",
     "react-dom": "npm:react-dom@^19.1.0",
+    "vite": "npm:vite@^6.3.5",
     "zod": "npm:zod@^3.25.7"
   }
 }

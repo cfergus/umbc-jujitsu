@@ -16,6 +16,7 @@
     "npm:react-dom@^19.1.0": "19.1.0_react@19.1.0",
     "npm:react@^19.1.0": "19.1.0",
     "npm:vite@*": "6.3.5_picomatch@4.0.2",
+    "npm:vite@^6.3.5": "6.3.5_picomatch@4.0.2",
     "npm:zod@^3.25.7": "3.25.7"
   },
   "npm": {
@@ -1596,6 +1597,7 @@
       "npm:autoprefixer@^10.4.21",
       "npm:react-dom@^19.1.0",
       "npm:react@^19.1.0",
+      "npm:vite@^6.3.5",
       "npm:zod@^3.25.7"
     ]
   }
