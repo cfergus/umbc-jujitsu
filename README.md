@@ -17,15 +17,16 @@ Install deno.
 
 ## Dynamic site
 
-The Dynamic (react) site can be deployed using.
+The Dynamic (react) site can be deployed using these commands, assuming deno.json is setup.
 
-`cd react-site/dist/`
-`deployctl deploy --project=cfergus-umbc-jujitsu --entrypoint=jsr:@std/http/file-server`
+1. `deno task build`
+1. `cd react-site/dist/`
+1. `deployctl deploy`
 
 This creates a "preview" deployment. Review the site at the URL provided. 
 If approved, promote it to production using:
 
-`deployctl deploy --prod --entrypoint=jsr:@std/http/file-server`
+`deployctl deploy --prod`
 
 (you can do this without the preview step if you like)
 
