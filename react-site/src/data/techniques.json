@@ -152,6 +152,37 @@
         "beltId": "rokyu"
     },
 
+    {
+        "id": "kote-gaeshi",
+        "name": "Kote Gaeshi",
+        "alternateNames": [
+            "Wristlock",
+            "Small Hand Turning"
+        ],
+        "categoryId": "kansetsu-waza",
+        "beltId": "rokyu"
+    },
+    {
+        "id": "wake-gatame",
+        "name": "Wake Gatame",
+        "alternateNames": [
+            "Armpit Armbar",
+            "Ikkyo"
+        ],
+        "categoryId": "kansetsu-waza",
+        "beltId": "rokyu"
+    },
+    {
+        "id": "yubi-nage",
+        "name": "Yubi Nage",
+        "alternateNames": [
+            "Finger Lock"
+        ],
+        "categoryId": "kansetsu-waza",
+        "beltId": "rokyu"
+    },
+    
+
     
     {
         "id": "merote-seoinage",
@@ -161,8 +192,511 @@
         ],
         "categoryId": "nage-waza",
         "beltId": "gokyu"
+    },
+    {
+        "id": "o-uchi-gari",
+        "name": "O Uchi Gari",
+        "alternateNames": [
+            "Large Inner Reap"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "gokyu"
+    },
+    {
+        "id": "ko-uchi-gari",
+        "name": "Ko Uchi Gari",
+        "alternateNames": [
+            "Small Inner Reap"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "gokyu"
+    },
+    {
+        "id": "yoko-wakare",
+        "name": "Yoko Wakare",
+        "alternateNames": [
+            "Side Seperation"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "gokyu"
+    },
+    {
+        "id": "uki-waza",
+        "name": "Uki Waza",
+        "alternateNames": [
+            "Floating Throw"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "gokyu"
+    },
+
+    {
+        "id": "rolling-falls",
+        "name": "Rolling Falls",
+        "alternateNames": [
+        ],
+        "categoryId": "ukemi-waza",
+        "beltId": "gokyu"
+    },
+    {
+        "id": "corner-falls",
+        "name": "Corner Falls",
+        "alternateNames": [
+        ],
+        "categoryId": "ukemi-waza",
+        "beltId": "gokyu"
+    },
+    {
+        "id": "four-way-falls",
+        "name": "Four-Way Falls",
+        "alternateNames": [
+        ],
+        "categoryId": "ukemi-waza",
+        "beltId": "gokyu"
+    },
+    {
+        "id": "zig-zag-falls",
+        "name": "Zig-Zag Falls",
+        "alternateNames": [
+        ],
+        "categoryId": "ukemi-waza",
+        "beltId": "gokyu"
+    },
+    {
+        "id": "closed-guard",
+        "name": "Closed Guard",
+        "alternateNames": [
+        ],
+        "categoryId": "gatame-waza",
+        "beltId": "gokyu"
+    },
+    {
+        "id": "open-guard",
+        "name": "Open Guard",
+        "alternateNames": [
+        ],
+        "categoryId": "gatame-waza",
+        "beltId": "gokyu"
+    },
+    {
+        "id": "guard-passing",
+        "name": "Passing The Guard",
+        "alternateNames": [
+        ],
+        "categoryId": "gatame-waza",
+        "beltId": "gokyu"
+    },
+    {
+        "id": "arm-locks",
+        "name": "Arm Locks",
+        "alternateNames": [
+        ],
+        "categoryId": "gatame-waza",
+        "beltId": "gokyu"
+    },
+    {
+        "id": "mount",
+        "name": "Mount",
+        "alternateNames": [
+        ],
+        "categoryId": "gatame-waza",
+        "beltId": "gokyu"
+    },
+    {
+        "id": "escapes",
+        "name": "Escapes",
+        "alternateNames": [
+        ],
+        "categoryId": "gatame-waza",
+        "beltId": "gokyu"
+    },
+    {
+        "id": "nikyo",
+        "name": "Nikyo",
+        "alternateNames": [
+            "Second Technique"
+        ],
+        "categoryId": "kansetsu-waza",
+        "beltId": "gokyu"
+    },
+    {
+        "id": "sankyo",
+        "name": "Sankyo",
+        "alternateNames": [
+            "Third Technique"
+        ],
+        "categoryId": "kansetsu-waza",
+        "beltId": "gokyu"
+    },
+    {
+        "id": "ude-garame",
+        "name": "Ude Garame",
+        "alternateNames": [
+            "Entangled Armlock",
+            "Bent arm armbar"
+        ],
+        "categoryId": "kansetsu-waza",
+        "beltId": "gokyu"
+    },
+    {
+        "id": "ude-ushiro-garame",
+        "name": "Ude Ushiro Garame",
+        "alternateNames": [
+            "Back Entangled Armlock"
+        ],
+        "categoryId": "kansetsu-waza",
+        "beltId": "gokyu"
+    },
+    
+
+    {
+        "id": "tomoe-nage",
+        "name": "Tomoe Nage",
+        "alternateNames": [
+            "Circular Throw"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "yonkyu"
+    },
+    {
+        "id": "sumi-gaeshi",
+        "name": "Sumi Gaeshi",
+        "alternateNames": [
+            "Corner Throw"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "yonkyu"
+    },
+    {
+        "id": "ko-soto-gari",
+        "name": "Ko Soto Gari",
+        "alternateNames": [
+            "Minor Outer Reap"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "yonkyu"
+    },
+    {
+        "id": "tani-otoshi",
+        "name": "Tani Otoshi",
+        "alternateNames": [
+            "Valley Drop"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "yonkyu"
+    },
+    {
+        "id": "harai-goshi",
+        "name": "Harai Goshi",
+        "alternateNames": [
+            "Hip Sweep"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "yonkyu"
+    },
+    {
+        "id": "hane-goshi",
+        "name": "Hane Goshi",
+        "alternateNames": [
+            "Hip Spring"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "yonkyu"
+    },
+    {
+        "id": "ushiro-goshi",
+        "name": "Ushiro Goshi",
+        "alternateNames": [
+            "Back Hip Throw"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "yonkyu"
+    },
+
+    {
+        "id": "irimi-nage",
+        "name": "Irimi Nage",
+        "alternateNames": [
+            "Body Entering Throw",
+            "Clothes Line Throw"
+        ],
+        "categoryId": "kansetsu-waza",
+        "beltId": "yonkyu"
+    },
+    {
+        "id": "shiho-nage",
+        "name": "Shiho Nage",
+        "alternateNames": [
+            "Four-Corner Throw"
+        ],
+        "categoryId": "kansetsu-waza",
+        "beltId": "yonkyu"
+    },
+    {
+        "id": "compound-kote-gaeshi",
+        "name": "Compound Kote Gaeshi",
+        "alternateNames": [
+            "Compound Wristlock"
+        ],
+        "categoryId": "kansetsu-waza",
+        "beltId": "yonkyu"
+    },
+    {
+        "id": "nami-juji-jime",
+        "name": "Nami Juji Jime",
+        "alternateNames": [
+            "Normal Cross Choke",
+            "Palms Up Cross Choke"
+        ],
+        "categoryId": "shimi-waza",
+        "beltId": "yonkyu"
+    },
+    {
+        "id": "gyaku-juji-jime",
+        "name": "Gyaku Juji Jime",
+        "alternateNames": [
+            "Reverse Cross Choke",
+            "Palms Down Cross Choke"
+        ],
+        "categoryId": "shimi-waza",
+        "beltId": "yonkyu"
+    },
+    {
+        "id": "kata-juji-jime",
+        "name": "Kata Juji Jime",
+        "alternateNames": [
+            "Half Cross Choke",
+            "One Palm Up, One Palm Down Cross Choke"
+        ],
+        "categoryId": "shimi-waza",
+        "beltId": "yonkyu"
+    },
+    {
+        "id": "okuri-eri-jime",
+        "name": "Okuri Eri Jime",
+        "alternateNames": [
+            "Sliding Collar Choke"
+        ],
+        "categoryId": "shimi-waza",
+        "beltId": "yonkyu"
+    },
+    {
+        "id": "kataha-jime",
+        "name": "Kataha Jime",
+        "alternateNames": [
+            "Single-Wing Choke"
+        ],
+        "categoryId": "shimi-waza",
+        "beltId": "yonkyu"
+    },
+    {
+        "id": "sankaku-jime",
+        "name": "Sankaku Jime",
+        "alternateNames": [
+            "Triangular Choke"
+        ],
+        "categoryId": "shimi-waza",
+        "beltId": "yonkyu"
+    },
+    {
+        "id": "hadaka-jime",
+        "name": "Hadaka Jime",
+        "alternateNames": [
+            "Naked Choke"
+        ],
+        "categoryId": "shimi-waza",
+        "beltId": "yonkyu"
+    },
+    {
+        "id": "baseball-grip-choke",
+        "name": "Baseball Grip Choke",
+        "alternateNames": [
+        ],
+        "categoryId": "shimi-waza",
+        "beltId": "yonkyu"
+    },
+
+    {
+        "id": "uki-otoshi",
+        "name": "Uki Otoshi",
+        "alternateNames": [
+            "Floating Drop"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "sankyu"
+    },
+    {
+        "id": "makikomi",
+        "name": "Makikomi",
+        "alternateNames": [
+            "Wraparound"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "sankyu"
+    },
+    {
+        "id": "o-soto-makikomi",
+        "name": "O Soto Makikomi",
+        "alternateNames": [
+            "Large Outside Wraparound"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "sankyu"
+    },
+    {
+        "id": "sode-tsuri-komi-goshi",
+        "name": "Sode Tsuri Komi Goshi",
+        "alternateNames": [
+            "Sleeve Lift-Pull Hip Throw"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "sankyu"
+    },
+    {
+        "id": "kata-guruma",
+        "name": "Kata Guruma",
+        "alternateNames": [
+            "Shoulder Wheel",
+            "Fireman carrying"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "sankyu"
+    },
+    {
+        "id": "uchi-mata",
+        "name": "Uchi Mata",
+        "alternateNames": [
+            "Inner Thigh Reap Throw"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "sankyu"
+    },
+    {
+        "id": "chicken-wing-wrist-lock",
+        "name": "Chicken Wing Wrist Lock",
+        "alternateNames": [
+            "Body Entering Throw",
+            "Clothes Line Throw"
+        ],
+        "categoryId": "kansetsu-waza",
+        "beltId": "sankyu"
+    },
+    {
+        "id": "ankle-locks",
+        "name": "Ankle Locks",
+        "alternateNames": [
+        ],
+        "categoryId": "kansetsu-waza",
+        "beltId": "sankyu"
+    },
+    {
+        "id": "neck-throws",
+        "name": "Neck Throws",
+        "alternateNames": [
+        ],
+        "categoryId": "kansetsu-waza",
+        "beltId": "sankyu"
+    },
+    
+    {
+        "id": "o-guruma",
+        "name": "O Guruma",
+        "alternateNames": [
+            "Large Wheel"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "nikyu"
+    },
+    {
+        "id": "hiza-guruma",
+        "name": "Hiza Guruma",
+        "alternateNames": [
+            "Knee Wheel"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "nikyu"
+    },
+    {
+        "id": "kuchiki-taoshi",
+        "name": "Kuchiki Taoshi",
+        "alternateNames": [
+            "One Hand Drop",
+            "Single Leg Pick"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "nikyu"
+    },
+    {
+        "id": "shimmeisho-no-waza",
+        "name": "Shimmeisho No Waza",
+        "alternateNames": [
+            "Double Leg Pick"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "nikyu"
+    },
+    {
+        "id": "tawara-gaeshi",
+        "name": "Tawara Gaeshi",
+        "alternateNames": [
+            "Bag of Rice Throw"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "nikyu"
+    },
+    {
+        "id": "rear-platform-throw",
+        "name": "Rear Platform Throw",
+        "alternateNames": [
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "nikyu"
+    },
+
+    {
+        "id": "yama-arashi",
+        "name": "Yama Arashi",
+        "alternateNames": [
+            "Mountain Storm"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "ikkyu"
+    },
+    {
+        "id": "de-ashi-harai",
+        "name": "De Ashi Harai",
+        "alternateNames": [
+            "Forward Foot Sweep"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "ikkyu"
+    },
+    {
+        "id": "ashi-guruma",
+        "name": "Ashi Guruma",
+        "alternateNames": [
+            "Leg Wheel"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "ikkyu"
+    },
+    {
+        "id": "okuri-ashi-harai",
+        "name": "Okuri Ashi Harai",
+        "alternateNames": [
+            "Sweeping Angle Foot Sweep"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "ikkyu"
+    },
+    {
+        "id": "kani-basami",
+        "name": "Kani Basami",
+        "alternateNames": [
+            "Scissor Throw"
+        ],
+        "categoryId": "nage-waza",
+        "beltId": "ikkyu"
     }
-
-
     
 ]
