@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardMedia, Chip, Typography } from '@mui/material'
-import { Technique } from '../models/technique'
+import { Technique } from 'src/models/technique.ts'
 
 export function TechniqueCard( {technique}: {technique: Technique} ) {
   return <div>

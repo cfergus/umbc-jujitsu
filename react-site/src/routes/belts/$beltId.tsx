@@ -1,7 +1,7 @@
 import { createFileRoute, notFound } from '@tanstack/react-router'
-import { allBelts, allTechniques, allTechniquesJoined } from '../../data/data-service'
+import { allBelts, allTechniques, allTechniquesJoined } from 'src/data/data-service.ts'
 import { Typography } from '@mui/material';
-import { TechniqueListComponent } from '../../components/TechniqueList';
+import { TechniqueListComponent } from 'src/components/TechniqueList.tsx';
 
 export const Route = createFileRoute('/belts/$beltId')({
   component: RouteComponent,

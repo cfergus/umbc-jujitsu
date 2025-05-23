@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
-import { Technique } from "../models/technique";
-import { TechniqueCard } from "./TechniqueCard";
+import { Technique } from "src/models/technique.ts";
+import { TechniqueCard } from "src/components/TechniqueCard.tsx";
 
 export function TechniqueListComponent( {techniques }: {techniques: Technique[]} ) {
 

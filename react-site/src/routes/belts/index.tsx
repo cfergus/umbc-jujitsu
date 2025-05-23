@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { createFileRoute } from '@tanstack/react-router'
-import { allBelts } from '../../data/data-service';
+import { allBelts } from 'src/data/data-service.ts';
 import { Grid } from '@mui/material';
-import { BeltCard } from '../../components/BeltCard';
+import { BeltCard } from 'src/components/BeltCard.tsx';
 
 const belts = allBelts();
 

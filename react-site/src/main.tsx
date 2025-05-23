@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createRouter } from '@tanstack/react-router'
-import { routeTree } from './routeTree.gen'
+import { routeTree } from 'src/routeTree.gen.ts'
 import './styles.css'
 
 import '@fontsource/roboto/300.css';

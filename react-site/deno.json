@@ -23,6 +23,7 @@
     "jsxImportSourceTypes": "@types/react"
   },
   "imports": {
+    "src/": "./src/",
     "@deno/vite-plugin": "npm:@deno/vite-plugin@^1.0.4",
     "@emotion/react": "npm:@emotion/react@^11.14.0",
     "@emotion/styled": "npm:@emotion/styled@^11.14.0",

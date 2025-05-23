@@ -1,5 +1,5 @@
-import { BeltId, BeltLevel } from "./belt";
-import { TechniqueCategory } from "./techniqueCategory";
+import { BeltId, BeltLevel } from "src/models/belt.ts";
+import { TechniqueCategory } from "src/models/techniqueCategory.ts";
 
 export type Technique = {
     id: string; // for URLs or similar

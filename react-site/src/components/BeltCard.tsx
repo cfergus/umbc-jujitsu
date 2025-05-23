@@ -1,5 +1,5 @@
 import { Card, CardActions, CardContent, CardHeader, Chip, Typography } from '@mui/material'
-import { BeltLevel } from '../models/belt'
+import { BeltLevel } from 'src/models/belt.ts'
 import { Link } from '@tanstack/react-router'
 
 export function BeltCard( {belt}: {belt: BeltLevel} ) {

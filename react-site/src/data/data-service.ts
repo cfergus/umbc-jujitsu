@@ -1,9 +1,9 @@
-import { Technique, TechniqueDTO } from "../models/technique";
-import allTechniquesJSON from '../data/techniques.json'
-import allBeltsJSON from '../data/belts.json'
-import allTechniqueCategoriesJSON from '../data/techniqueCategories.json'
-import { BeltLevel } from "../models/belt";
-import { TechniqueCategory } from "../models/techniqueCategory";
+import { Technique, TechniqueDTO } from "src/models/technique.ts";
+import allTechniquesJSON from '../data/techniques.json' with {type: 'json'}
+import allBeltsJSON from '../data/belts.json' with {type: 'json'}
+import allTechniqueCategoriesJSON from '../data/techniqueCategories.json' with {type: 'json'}
+import { BeltLevel } from "src/models/belt.ts";
+import { TechniqueCategory } from "src/models/techniqueCategory.ts";
 
 
 /**
