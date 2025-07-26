@@ -20,7 +20,7 @@ span.translation-en {
   font-size: 0.9em;
 }
 span.translation-en::before {
-  content: '- ';
+  content: ' - ';
 }
 /* colors are just for identification / debugging
 .technique {

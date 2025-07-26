@@ -8,41 +8,82 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
-// Import Routes
+import { Route as rootRouteImport } from './routes/__root'
+import { Route as IndexRouteImport } from './routes/index'
+import { Route as TechniquesIndexRouteImport } from './routes/techniques/index'
+import { Route as SyllabusIndexRouteImport } from './routes/syllabus/index'
+import { Route as BeltsIndexRouteImport } from './routes/belts/index'
+import { Route as BeltsBeltIdRouteImport } from './routes/belts/$beltId'
 
-import { Route as rootRoute } from './routes/__root'
-import { Route as IndexImport } from './routes/index'
-import { Route as TechniquesIndexImport } from './routes/techniques/index'
-import { Route as BeltsIndexImport } from './routes/belts/index'
-import { Route as BeltsBeltIdImport } from './routes/belts/$beltId'
-
-// Create/Update Routes
-
-const IndexRoute = IndexImport.update({
+const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
-  getParentRoute: () => rootRoute,
+  getParentRoute: () => rootRouteImport,
 } as any)
-
-const TechniquesIndexRoute = TechniquesIndexImport.update({
+const TechniquesIndexRoute = TechniquesIndexRouteImport.update({
   id: '/techniques/',
   path: '/techniques/',
-  getParentRoute: () => rootRoute,
+  getParentRoute: () => rootRouteImport,
 } as any)
-
-const BeltsIndexRoute = BeltsIndexImport.update({
+const SyllabusIndexRoute = SyllabusIndexRouteImport.update({
+  id: '/syllabus/',
+  path: '/syllabus/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BeltsIndexRoute = BeltsIndexRouteImport.update({
   id: '/belts/',
   path: '/belts/',
-  getParentRoute: () => rootRoute,
+  getParentRoute: () => rootRouteImport,
 } as any)
-
-const BeltsBeltIdRoute = BeltsBeltIdImport.update({
+const BeltsBeltIdRoute = BeltsBeltIdRouteImport.update({
   id: '/belts/$beltId',
   path: '/belts/$beltId',
-  getParentRoute: () => rootRoute,
+  getParentRoute: () => rootRouteImport,
 } as any)
 
-// Populate the FileRoutesByPath interface
+export interface FileRoutesByFullPath {
+  '/': typeof IndexRoute
+  '/belts/$beltId': typeof BeltsBeltIdRoute
+  '/belts': typeof BeltsIndexRoute
+  '/syllabus': typeof SyllabusIndexRoute
+  '/techniques': typeof TechniquesIndexRoute
+}
+export interface FileRoutesByTo {
+  '/': typeof IndexRoute
+  '/belts/$beltId': typeof BeltsBeltIdRoute
+  '/belts': typeof BeltsIndexRoute
+  '/syllabus': typeof SyllabusIndexRoute
+  '/techniques': typeof TechniquesIndexRoute
+}
+export interface FileRoutesById {
+  __root__: typeof rootRouteImport
+  '/': typeof IndexRoute
+  '/belts/$beltId': typeof BeltsBeltIdRoute
+  '/belts/': typeof BeltsIndexRoute
+  '/syllabus/': typeof SyllabusIndexRoute
+  '/techniques/': typeof TechniquesIndexRoute
+}
+export interface FileRouteTypes {
+  fileRoutesByFullPath: FileRoutesByFullPath
+  fullPaths: '/' | '/belts/$beltId' | '/belts' | '/syllabus' | '/techniques'
+  fileRoutesByTo: FileRoutesByTo
+  to: '/' | '/belts/$beltId' | '/belts' | '/syllabus' | '/techniques'
+  id:
+    | '__root__'
+    | '/'
+    | '/belts/$beltId'
+    | '/belts/'
+    | '/syllabus/'
+    | '/techniques/'
+  fileRoutesById: FileRoutesById
+}
+export interface RootRouteChildren {
+  IndexRoute: typeof IndexRoute
+  BeltsBeltIdRoute: typeof BeltsBeltIdRoute
+  BeltsIndexRoute: typeof BeltsIndexRoute
+  SyllabusIndexRoute: typeof SyllabusIndexRoute
+  TechniquesIndexRoute: typeof TechniquesIndexRoute
+}
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
@@ -50,108 +91,47 @@ declare module '@tanstack/react-router' {
       id: '/'
       path: '/'
       fullPath: '/'
-      preLoaderRoute: typeof IndexImport
-      parentRoute: typeof rootRoute
-    }
-    '/belts/$beltId': {
-      id: '/belts/$beltId'
-      path: '/belts/$beltId'
-      fullPath: '/belts/$beltId'
-      preLoaderRoute: typeof BeltsBeltIdImport
-      parentRoute: typeof rootRoute
-    }
-    '/belts/': {
-      id: '/belts/'
-      path: '/belts'
-      fullPath: '/belts'
-      preLoaderRoute: typeof BeltsIndexImport
-      parentRoute: typeof rootRoute
+      preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/techniques/': {
       id: '/techniques/'
       path: '/techniques'
       fullPath: '/techniques'
-      preLoaderRoute: typeof TechniquesIndexImport
-      parentRoute: typeof rootRoute
+      preLoaderRoute: typeof TechniquesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/syllabus/': {
+      id: '/syllabus/'
+      path: '/syllabus'
+      fullPath: '/syllabus'
+      preLoaderRoute: typeof SyllabusIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/belts/': {
+      id: '/belts/'
+      path: '/belts'
+      fullPath: '/belts'
+      preLoaderRoute: typeof BeltsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/belts/$beltId': {
+      id: '/belts/$beltId'
+      path: '/belts/$beltId'
+      fullPath: '/belts/$beltId'
+      preLoaderRoute: typeof BeltsBeltIdRouteImport
+      parentRoute: typeof rootRouteImport
     }
   }
-}
-
-// Create and export the route tree
-
-export interface FileRoutesByFullPath {
-  '/': typeof IndexRoute
-  '/belts/$beltId': typeof BeltsBeltIdRoute
-  '/belts': typeof BeltsIndexRoute
-  '/techniques': typeof TechniquesIndexRoute
-}
-
-export interface FileRoutesByTo {
-  '/': typeof IndexRoute
-  '/belts/$beltId': typeof BeltsBeltIdRoute
-  '/belts': typeof BeltsIndexRoute
-  '/techniques': typeof TechniquesIndexRoute
-}
-
-export interface FileRoutesById {
-  __root__: typeof rootRoute
-  '/': typeof IndexRoute
-  '/belts/$beltId': typeof BeltsBeltIdRoute
-  '/belts/': typeof BeltsIndexRoute
-  '/techniques/': typeof TechniquesIndexRoute
-}
-
-export interface FileRouteTypes {
-  fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/belts/$beltId' | '/belts' | '/techniques'
-  fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/belts/$beltId' | '/belts' | '/techniques'
-  id: '__root__' | '/' | '/belts/$beltId' | '/belts/' | '/techniques/'
-  fileRoutesById: FileRoutesById
-}
-
-export interface RootRouteChildren {
-  IndexRoute: typeof IndexRoute
-  BeltsBeltIdRoute: typeof BeltsBeltIdRoute
-  BeltsIndexRoute: typeof BeltsIndexRoute
-  TechniquesIndexRoute: typeof TechniquesIndexRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BeltsBeltIdRoute: BeltsBeltIdRoute,
   BeltsIndexRoute: BeltsIndexRoute,
+  SyllabusIndexRoute: SyllabusIndexRoute,
   TechniquesIndexRoute: TechniquesIndexRoute,
 }
-
-export const routeTree = rootRoute
+export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-/* ROUTE_MANIFEST_START
-{
-  "routes": {
-    "__root__": {
-      "filePath": "__root.tsx",
-      "children": [
-        "/",
-        "/belts/$beltId",
-        "/belts/",
-        "/techniques/"
-      ]
-    },
-    "/": {
-      "filePath": "index.tsx"
-    },
-    "/belts/$beltId": {
-      "filePath": "belts/$beltId.tsx"
-    },
-    "/belts/": {
-      "filePath": "belts/index.tsx"
-    },
-    "/techniques/": {
-      "filePath": "techniques/index.tsx"
-    }
-  }
-}
-ROUTE_MANIFEST_END */
