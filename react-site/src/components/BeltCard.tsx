@@ -1,6 +1,6 @@
-import { Card, CardActions, CardContent, CardHeader, Chip, Typography } from '@mui/material'
+import { Card, CardActions, CardContent, CardHeader, Typography } from '@mui/material'
 import { BeltLevel } from 'src/models/belt.ts'
-import { Link } from '@tanstack/react-router'
+import { MUIButtonLink } from "./MUIButtonLink.tsx";
 
 export function BeltCard( {belt}: {belt: BeltLevel} ) {
   return <div>
@@ -17,16 +17,15 @@ export function BeltCard( {belt}: {belt: BeltLevel} ) {
         </Typography>
       </CardContent>
       <CardActions>
-        {/* TODO: link to belt specific techniques */}
-        <Link to="/belts/$beltId"
+        <MUIButtonLink to="/belts/$beltId"
           params={{
             beltId: belt.id
           }}
           activeProps={{
             className: 'font-bold',
           }}>
-            Techniques
-        </Link>
+          Techniques
+        </MUIButtonLink>
       </CardActions>
     </Card>
   </div>
