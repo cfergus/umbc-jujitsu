@@ -31,11 +31,13 @@ function RouteComponent() {
 
   return <div>
       
-      <Typography variant="h3" sx={{ backgroundColor: belt.color  }}>
+      <div id="belt-header" className={ `belt-${belt.id}` } style={{ height: 30 }}>
+      </div>
+
+      <Typography variant="h3">
         {belt.name}
       </Typography>
       {belt.ordinalName} - {belt.colorName} belt
-
 
       <div>
         <TechniqueListComponent techniques={techniques}>

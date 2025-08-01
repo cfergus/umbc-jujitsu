@@ -5,16 +5,13 @@ import { Link } from '@tanstack/react-router'
 export function BeltCard( {belt}: {belt: BeltLevel} ) {
   return <div>
     <Card>
-              
-      <CardHeader title={belt.name} sx={{ backgroundColor: belt.color }}>
-        <Typography gutterBottom variant="h5" component="div">
-          {belt.name}
-        </Typography>
-      </CardHeader>
+      <CardHeader className={ `belt-${belt.id}` } />
       <CardContent>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
           
-          
+          <Typography gutterBottom variant="h5" component="div">
+            {belt.name}
+          </Typography>
           {belt.ordinalName} - {belt.colorName} belt
 
         </Typography>

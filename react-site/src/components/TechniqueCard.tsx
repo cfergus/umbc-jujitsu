@@ -26,12 +26,14 @@ export function TechniqueCard( {technique}: {technique: Technique} ) {
               <br/>
             </>
           }
-
+{/* 
+For now, displaying belt level inline with the technique is distracting
+In the future: figure out a better display for it, and make it an optional prop for the component
           {technique.beltLevel && 
-            <span>
-              <span style={{backgroundColor: technique.beltLevel.color }}> {technique.beltLevel.name} </span>
-            </span>
-          }
+            <div style= {{height: '20px', width: '40px' }} className={ `belt-${technique.beltLevel.id}` }>
+              { {technique.beltLevel.name} }
+            </div>
+          } */}
         </Typography>
       </CardContent>
     </Card>
