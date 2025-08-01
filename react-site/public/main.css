@@ -1,7 +1,9 @@
-body {
-  /* Too broad. Narrow it down */
-  text-transform: capitalize;
+.syllabus {
   font-family: Helvetica;
+}
+
+.technique {
+  text-transform: capitalize;
 }
 
 #vocabulary dt {

@@ -19,7 +19,12 @@ const navItems = linkOptions([
   {
     to: '/techniques',
     label: 'Techniques'
+  },
+  {
+    to: '/syllabus',
+    label: 'Syllabus'
   }
+  
 ]);
 
 export default function JujitsuAppBar() {
@@ -78,7 +83,7 @@ export default function JujitsuAppBar() {
             aria-label="open drawer"
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: 'none' } }}>
-              Show Options        
+              Navigation
           </Button>
 
 

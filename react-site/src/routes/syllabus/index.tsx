@@ -44,8 +44,8 @@ function BeltSyllabusComponent( belt: BeltLevel) {
       techniqueCategories.map( category => {
         // TODO: Service for accessing category techniques? 
         const categoryTechniques = techniques.filter( t => 
-            t.category.id === category.id 
-            && t.beltLevel.id === belt.id 
+            t.category?.id === category.id 
+            && t.beltLevel?.id === belt.id 
           );
         // If there are no techniques of this category, skip it entirely
         if( categoryTechniques.length > 0 ) {
