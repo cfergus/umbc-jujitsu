@@ -21,10 +21,7 @@ export function TechniqueCard( {technique}: {technique: Technique} ) {
           {technique.alternateNames?.map( (n) => <span key={n}>{n}<br/></span>) }
 
           {technique.category && 
-            <>
-              <Chip label={technique.category.name} component="a" href="#todo-chip-link" clickable />
-              <br/>
-            </>
+              <Chip label={technique.category.name} />
           }
 {/* 
 For now, displaying belt level inline with the technique is distracting
