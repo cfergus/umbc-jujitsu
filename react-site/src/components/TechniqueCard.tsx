@@ -16,13 +16,13 @@ export function TechniqueCard( {technique}: {technique: Technique} ) {
         </Typography>
       </CardHeader>
       <CardContent>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          
+        <Typography variant="body2" sx={{ color: 'text.secondary' }}>  
           {technique.alternateNames?.map( (n) => <span key={n}>{n}<br/></span>) }
+        </Typography>
 
-          {technique.category && 
-              <Chip label={technique.category.name} />
-          }
+        {technique.category && 
+            <Chip label={technique.category.name} />
+        }
 {/* 
 For now, displaying belt level inline with the technique is distracting
 In the future: figure out a better display for it, and make it an optional prop for the component
@@ -31,7 +31,7 @@ In the future: figure out a better display for it, and make it an optional prop 
               { {technique.beltLevel.name} }
             </div>
           } */}
-        </Typography>
+        
       </CardContent>
     </Card>
   </div>
