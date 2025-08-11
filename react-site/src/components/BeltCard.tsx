@@ -6,14 +6,13 @@ export function BeltCard( {belt}: {belt: BeltLevel} ) {
   return <div>
     <Card>
       <CardHeader className={ `belt-${belt.id}` } />
-      <CardContent>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+      <CardContent>          
+        <Typography gutterBottom variant="h5" component="div">
+          {belt.name}
+        </Typography>
           
-          <Typography gutterBottom variant="h5" component="div">
-            {belt.name}
-          </Typography>
+        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
           {belt.ordinalName} - {belt.colorName} belt
-
         </Typography>
       </CardContent>
       <CardActions>
