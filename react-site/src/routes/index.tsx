@@ -17,14 +17,12 @@ function HomeComponent() {
       <p>
         The syllabus link in the navigation bar is current for the class.
 
-        A non-interactive version of the year 2000 syllabus is also available at <a href="/syllabus.html">this link</a> . 
+        A non-interactive version of the year 2000 syllabus is also available at <a href="/syllabus.html">this link</a>. 
       </p>
 
-      {/* 
-      TODO : Include archive into public?
       <p>
-        You can also view the original syllabus from year 2000 here
-      </p> */}
+        You can also view the original syllabus as a PDF from year 2000 at <a href="/UMBC Jujitsu Syllabus.pdf">this link</a>.
+      </p>
 
     </div>
   )
