@@ -24,13 +24,14 @@ export function TechniqueCard( {technique}: {technique: Technique} ) {
             <Chip label={technique.category.name} />
         }
 {/* 
-For now, displaying belt level inline with the technique is distracting
+For now, displaying colored/detailed belt level inline with the technique is distracting
 In the future: figure out a better display for it, and make it an optional prop for the component
           {technique.beltLevel && 
             <div style= {{height: '20px', width: '40px' }} className={ `belt-${technique.beltLevel.id}` }>
               { {technique.beltLevel.name} }
             </div>
           } */}
+          <Chip label={technique.beltLevel?.name} />
         
       </CardContent>
     </Card>

@@ -1,5 +1,5 @@
 import { createFileRoute, notFound } from '@tanstack/react-router'
-import { allBelts, allTechniquesJoined } from 'src/data/data-service.ts'
+import { allBelts, allTechniquesJoined } from '../../data/dataService.ts'
 import { Typography } from '@mui/material';
 import { TechniqueListComponent } from 'src/components/TechniqueList.tsx';
 

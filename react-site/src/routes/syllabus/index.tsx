@@ -1,9 +1,10 @@
 import { Fragment } from "react";
 import { createFileRoute } from '@tanstack/react-router'
-import { allBelts, allTechniqueCategories, allTechniquesJoined } from 'src/data/data-service.ts';
+import { allBelts, allTechniqueCategories, allTechniquesJoined, beltRequirementsForSyllabus } from '../../data/dataService.ts';
 import { BeltLevel } from "../../models/belt.ts";
 import { TechniqueCategory } from "../../models/techniqueCategory.ts";
 import { Technique } from "../../models/technique.ts";
+import { BeltRequirementsByCategory } from "../../models/beltRequirement.ts";
 
 // Use same styles as static syllabus for now
 import '../../../public/main.css';
@@ -49,8 +50,18 @@ function BeltSyllabusComponent( belt: BeltLevel) {
           );
         // If there are no techniques of this category, skip it entirely
         if( categoryTechniques.length > 0 ) {
-          return TechniqueCategorySyllabusComponent( category, categoryTechniques );
+          return <Fragment key={category.id}>
+            {TechniqueCategorySyllabusComponent( category, categoryTechniques )}
+          </Fragment>
         }
+      })
+    }
+
+    {
+      beltRequirementsForSyllabus(belt.id).map( category => {
+        return <Fragment key={category.category}>
+          {BeltRequirementSyllabusComponent(category)}
+        </Fragment>
       })
     }
     
@@ -66,6 +77,23 @@ function TechniqueCategorySyllabusComponent( category: TechniqueCategory, techni
           return <li key={t.id}>
             <span className="technique">{t.name}</span>
             { t.alternateNames?.length > 0 ? <span className="translation-en">{t.alternateNames[0]}</span> : null }
+          </li>
+        })
+      }
+    </ul>
+  </section>
+}
+
+function BeltRequirementSyllabusComponent( category: BeltRequirementsByCategory ) {
+
+  return <section className="technique-category">
+    {/* TODO : distinct class for requirements vs techniques?  Same for the span below*/}
+    <h3>{category.category}</h3>
+    <ul>
+      {
+        category.requirements.map( requirement => {
+          return <li key={requirement.category}>
+            <span className="technique">{requirement.description}</span>
           </li>
         })
       }

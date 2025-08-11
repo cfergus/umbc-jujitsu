@@ -1,0 +1,117 @@
+[
+    {
+        "beltId": "rokyu",
+        "description": "1 minute",
+        "category": "Self-defense kata"
+    },
+    {
+        "beltId": "rokyu",
+        "description": "Ground Evasions",
+        "category": "Ne Waza"
+    },
+    {
+        "beltId": "gokyu",
+        "description": "1 minute",
+        "category": "Self-defense kata"
+    },
+    {
+        "beltId": "gokyu",
+        "description": "1 minute",
+        "category": "Ne Waza"
+    },
+    
+    {
+        "beltId": "yonkyu",
+        "description": "1.5 minutes",
+        "category": "Self-defense kata"
+    },
+    {
+        "beltId": "yonkyu",
+        "description": "1 minute",
+        "category": "Ne Waza"
+    },
+    {
+        "beltId": "yonkyu",
+        "description": "1 minute",
+        "category": "Free-Spar"
+    },
+
+    {
+        "beltId": "sankyu",
+        "description": "2 minutes with multiple attackers",
+        "category": "Self-defense kata"
+    },
+    {
+        "beltId": "sankyu",
+        "description": "Three 1-minute rounds",
+        "category": "Ne Waza"
+    },
+    {
+        "beltId": "sankyu",
+        "description": "Three 1-minute rounds",
+        "category": "Randori"
+    },
+    {
+        "beltId": "sankyu",
+        "description": "Three 1-minute rounds",
+        "category": "Free-Spar"
+    },
+
+    {
+        "beltId": "nikyu",
+        "description": "2 minutes with multiple attackers",
+        "category": "Self-defense kata"
+    },
+    {
+        "beltId": "nikyu",
+        "description": "Four 1-minute rounds",
+        "category": "Ne Waza"
+    },
+    {
+        "beltId": "nikyu",
+        "description": "Four 1-minute rounds",
+        "category": "Randori"
+    },
+    {
+        "beltId": "nikyu",
+        "description": "Four 1-minute rounds",
+        "category": "Free-Spar"
+    },
+
+    {
+        "beltId": "ikkyu",
+        "description": "2 minutes with multiple attackers",
+        "category": "Self-defense kata"
+    },
+    {
+        "beltId": "ikkyu",
+        "description": "Five 1-minute rounds",
+        "category": "Ne Waza"
+    },
+    {
+        "beltId": "ikkyu",
+        "description": "Five 1-minute rounds",
+        "category": "Randori"
+    },
+    {
+        "beltId": "ikkyu",
+        "description": "Five 1-minute rounds",
+        "category": "Free-Spar"
+    },
+
+    {
+        "beltId": "shodan",
+        "description": "2 minutes with multiple attackers",
+        "category": "Self-defense kata"
+    },
+    {
+        "beltId": "shodan",
+        "description": "Six 1-minute rounds",
+        "category": "Ne Waza"
+    },
+    {
+        "beltId": "shodan",
+        "description": "Six 1-minute rounds",
+        "category": "Free-Spar"
+    }
+]
