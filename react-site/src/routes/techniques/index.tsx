@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { allTechniquesJoined } from '../../data/data-service';
-import { TechniqueListComponent } from '../../components/TechniqueList';
+import { allTechniquesJoined } from '../../data/dataService.ts';
+import { TechniqueListComponent } from '../../components/TechniqueList.tsx';
 
 const techniques = allTechniquesJoined();
 
