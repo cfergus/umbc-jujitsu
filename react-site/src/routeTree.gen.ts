@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as TechniquesIndexRouteImport } from './routes/techniques/index'
 import { Route as SyllabusIndexRouteImport } from './routes/syllabus/index'
+import { Route as CombinationsIndexRouteImport } from './routes/combinations/index'
 import { Route as BeltsIndexRouteImport } from './routes/belts/index'
 import { Route as BeltsBeltIdRouteImport } from './routes/belts/$beltId'
 
@@ -30,6 +31,11 @@ const SyllabusIndexRoute = SyllabusIndexRouteImport.update({
   path: '/syllabus/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CombinationsIndexRoute = CombinationsIndexRouteImport.update({
+  id: '/combinations/',
+  path: '/combinations/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BeltsIndexRoute = BeltsIndexRouteImport.update({
   id: '/belts/',
   path: '/belts/',
@@ -45,6 +51,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/belts/$beltId': typeof BeltsBeltIdRoute
   '/belts': typeof BeltsIndexRoute
+  '/combinations': typeof CombinationsIndexRoute
   '/syllabus': typeof SyllabusIndexRoute
   '/techniques': typeof TechniquesIndexRoute
 }
@@ -52,6 +59,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/belts/$beltId': typeof BeltsBeltIdRoute
   '/belts': typeof BeltsIndexRoute
+  '/combinations': typeof CombinationsIndexRoute
   '/syllabus': typeof SyllabusIndexRoute
   '/techniques': typeof TechniquesIndexRoute
 }
@@ -60,19 +68,33 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/belts/$beltId': typeof BeltsBeltIdRoute
   '/belts/': typeof BeltsIndexRoute
+  '/combinations/': typeof CombinationsIndexRoute
   '/syllabus/': typeof SyllabusIndexRoute
   '/techniques/': typeof TechniquesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/belts/$beltId' | '/belts' | '/syllabus' | '/techniques'
+  fullPaths:
+    | '/'
+    | '/belts/$beltId'
+    | '/belts'
+    | '/combinations'
+    | '/syllabus'
+    | '/techniques'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/belts/$beltId' | '/belts' | '/syllabus' | '/techniques'
+  to:
+    | '/'
+    | '/belts/$beltId'
+    | '/belts'
+    | '/combinations'
+    | '/syllabus'
+    | '/techniques'
   id:
     | '__root__'
     | '/'
     | '/belts/$beltId'
     | '/belts/'
+    | '/combinations/'
     | '/syllabus/'
     | '/techniques/'
   fileRoutesById: FileRoutesById
@@ -81,6 +103,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BeltsBeltIdRoute: typeof BeltsBeltIdRoute
   BeltsIndexRoute: typeof BeltsIndexRoute
+  CombinationsIndexRoute: typeof CombinationsIndexRoute
   SyllabusIndexRoute: typeof SyllabusIndexRoute
   TechniquesIndexRoute: typeof TechniquesIndexRoute
 }
@@ -108,6 +131,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SyllabusIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/combinations/': {
+      id: '/combinations/'
+      path: '/combinations'
+      fullPath: '/combinations'
+      preLoaderRoute: typeof CombinationsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/belts/': {
       id: '/belts/'
       path: '/belts'
@@ -129,6 +159,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BeltsBeltIdRoute: BeltsBeltIdRoute,
   BeltsIndexRoute: BeltsIndexRoute,
+  CombinationsIndexRoute: CombinationsIndexRoute,
   SyllabusIndexRoute: SyllabusIndexRoute,
   TechniquesIndexRoute: TechniquesIndexRoute,
 }
