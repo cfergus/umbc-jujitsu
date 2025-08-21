@@ -1,5 +1,4 @@
-import * as React from 'react'
-import { Link, Outlet, createRootRoute } from '@tanstack/react-router'
+import { Outlet, createRootRoute } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 import JujitsuAppBar from 'src/components/JujitsuAppBar.tsx'
 
@@ -11,7 +10,9 @@ function RootComponent() {
   return (
     <>
       <JujitsuAppBar></JujitsuAppBar>
-      <Outlet />
+      <div style={{margin: '12px' }}>
+        <Outlet />
+      </div>
       <TanStackRouterDevtools position="bottom-right" />
     </>
   )
