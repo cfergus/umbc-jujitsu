@@ -1,5 +1,6 @@
 import { AppBar, Box, Button, CssBaseline, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from "@mui/material";
 import { Link, linkOptions } from "@tanstack/react-router";
+import MenuIcon from '@mui/icons-material/Menu';
 import React from "react";
 
 
@@ -66,10 +67,7 @@ export default function JujitsuAppBar() {
       <CssBaseline />
       <AppBar component="nav" position="sticky">
         <Toolbar>
-          {/* 
-
-          TODO : Haven't imported Icons yet
-
+          
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -78,19 +76,12 @@ export default function JujitsuAppBar() {
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
             <MenuIcon />
-          </IconButton> */}
-          <Button color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}>
-              Navigation
-          </Button>
-
-
+          </IconButton>
+        
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ flexGrow: 1}}
           >
             {homeLabel}
           </Typography>
